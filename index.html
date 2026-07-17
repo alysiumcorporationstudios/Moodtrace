@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MoodTrace — Daily Emotional Check-in</title>
+<meta name="description" content="Track and understand your emotional patterns day to day with gentle daily check-ins." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- React (production) via CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- App scripts (transformed by Babel in-browser for static-zip simplicity) -->
+  <script type="text/babel" data-presets="env,react" src="services/kypeClient.js"></script>
+  <script type="text/babel" data-presets="env,react" src="app.js"></script>
+</body>
+</html>
